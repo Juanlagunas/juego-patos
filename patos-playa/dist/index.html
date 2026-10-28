@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff7e9"><meta name="description" content="Sube 50 escalones de retos de patos: encuentra, cuenta y recuerda. Con estrellas, pistas y todos los intentos que necesites."><title>¿Los patos te ganan?</title><link rel="stylesheet" href="style.css?v=54"></head>
+<body><main>
+<header><div class="eyebrow">UNA AVENTURA A LA ORILLA DEL MAR</div><h1>¿Los patos <span>te ganan?</span></h1><p>50 escalones, retos más difíciles y unas patas con mucho estilo.</p></header>
+<div class="status"><span>🏖️ La escalera de la playa</span><span id="stars" aria-live="polite">⭐ 0 / 50 estrellas</span></div>
+<div class="map-controls"><button id="previousMap" class="secondary" aria-label="Ver tramo anterior">←</button><span id="chapter"></span><button id="nextMap" class="secondary" aria-label="Ver tramo siguiente">→</button></div><div class="layout">
+<section class="beach" aria-label="Escalera de 50 retos"><div class="sun"></div><div class="cloud one"></div><div class="cloud two"></div><div class="sea"></div><div class="sand"></div><span class="shell">🐚</span><span class="umbrella">⛱️</span><div class="summit">☁️ ¡Hasta las nubes!</div><nav id="stairs" aria-label="Elige un escalón desbloqueado"></nav><div class="beach-caption">Tu patito sube con cada estrella</div></section>
+<section class="challenge" aria-labelledby="title"><div class="level-label" id="levelLabel"></div><h2 id="title" tabindex="-1"></h2><p id="instructions"></p><div id="activity"></div><div class="feedback" id="feedback" role="status" aria-live="polite"></div><div class="actions"><button id="hint" class="secondary">💡 Dame una pista</button><button id="next" class="primary" hidden>Subir al siguiente ↑</button></div></section>
+</div><footer>Sin prisa y sin perder vidas. ¡Puedes volver a intentarlo! <span>Diseñado con imaginación y mucho cuac 🦆</span></footer>
+</main><script src="challenges.js?v=54"></script><script src="game.js?v=54"></script></body></html>

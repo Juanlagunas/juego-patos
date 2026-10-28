@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f9eef5">
+  <title>Pasarela Patita · Tu momento de brillar</title>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script defer src="rules.js?v=3"></script><script defer src="character.js?v=3"></script><script defer src="game.js?v=3"></script>
+</head>
+<body>
+  <header><a class="brand" href="index.html">✦ PASARELA <em>Patita</em></a><span class="edition">EL CLUB DE LAS ESTRELLAS</span><button id="sound" class="quiet" aria-pressed="false">Sonido: apagado</button></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">TU ESTILO. TU HISTORIA.</p><h1>Naciste para <em>brillar.</em></h1><p>Viste a tu patita, conquista la pasarela y compite contra las tres mejores.</p></div><div class="rank"><span id="rank-icon">✧</span><div><small>TU RANGO</small><strong id="rank-name">Principiante</strong><span id="xp-text">0 / 100 puntos</span><progress id="xp" max="100" value="0"></progress></div></div></section>
+    <section class="game-grid">
+      <aside class="brief card"><p class="eyebrow">EL RETO DE HOY</p><span id="theme-icon" class="theme-icon">🌸</span><h2 id="theme-name"></h2><p id="theme-description"></p><div id="theme-tags" class="tags"></div><div class="divider"></div><p class="eyebrow">LAS TRES A VENCER</p><div id="rivals"></div><p class="note">Cada jurado valora el tema, la combinación y tus poses.</p><div class="divider"></div><label class="name-label" for="player-name">NOMBRE DE TU PATITA</label><input id="player-name" maxlength="20" placeholder="Lola" autocomplete="off"><p id="round-label" class="note"></p></aside>
+      <section class="stage card" aria-label="Probador y pasarela"><div class="stage-heading"><span>ESTUDIO 01 / <b id="stage-label">EL PROBADOR</b></span><span>✦ EN VIVO</span></div><div class="spotlight"></div><div class="stage-stars" aria-hidden="true">✧ <span>✦</span> ✧</div><div id="character" class="character"></div><div class="platform"></div><div class="stage-caption"><span id="character-name">Lola</span><small id="outfit-caption">Tu próxima gran entrada</small></div><div id="pose-panel" hidden><strong id="pose-title" aria-live="polite"></strong><p id="pose-instruction">¡Posa cuando la luz entre en la zona rosa!</p><div class="meter" id="pose-meter" aria-label="Pulsa cuando la rayita llegue a la zona rosa central"><div class="target"></div><div id="needle"></div></div><button id="pose-button" class="primary">¡POSAR! <span>✦</span></button><p id="pose-count" aria-live="polite"></p></div><div id="sparkles" aria-hidden="true"></div></section>
+      <section class="closet card"><div class="closet-heading"><div><p class="eyebrow">TU ARMARIO</p><h2>Un look muy tú.</h2></div><span>♡</span></div><div id="tabs" class="tabs" role="tablist" aria-label="Categorías de ropa"></div><p id="category-hint" class="note"></p><div id="items" class="items" role="tabpanel"></div><div class="look-footer"><div><small>RECUERDA</small><p>Elige pensando en el tema. ¡Y dale tu toque!</p></div><button id="walk" class="primary">A LA PASARELA <span>↗</span></button></div></section>
+    </section>
+    <footer><span>HECHO PARA SOÑAR EN GRANDE</span><span>✧</span><span id="save-status">Tu progreso se guarda en este navegador</span></footer>
+  </main>
+  <dialog id="results"><div class="results-body"><p class="eyebrow">EL JURADO HA DECIDIDO</p><h2 id="result-title"></h2><p id="result-detail"></p><div id="podium"></div><p id="score-detail" class="note"></p><p id="reward" class="reward"></p><button id="next" class="primary"></button></div></dialog>
+</body>
+</html>
